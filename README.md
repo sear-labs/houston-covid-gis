@@ -1,5 +1,7 @@
 # Houston COVID-19 GIS — NSF EAGER #2028612
 
+[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22309109.svg)](https://doi.org/10.5281/zenodo.22309109)
+
 The Houston COVID-19 mapping and spatial analysis from **NSF EAGER award #2028612**, *"AI-Enabled
 Optimization of the COVID-19 Therapeutics Supply Chain to Support Community Public Health"*
 (Erick C. Jones Jr., PI) — rebuilt in Python.
@@ -159,10 +161,9 @@ Cite **the paper** for the work and **this repository** for the code.
 }
 ```
 
-**Code DOI:** not yet minted. Once this repository is connected to Zenodo and a release is tagged,
-Zenodo issues two DOIs — a *version* DOI per release, and a **concept DOI that always resolves to
-the latest version and never changes**. The concept DOI goes here and in `CITATION.cff`; it stays
-correct for the life of the repository, so it is one edit rather than a per-release chore.
+**Code DOI:** [10.5281/zenodo.22309109](https://doi.org/10.5281/zenodo.22309109) — this is the *concept* DOI. It always resolves
+to the latest version and never changes, so it is the one to cite. The v1.0.0 release
+additionally has its own version DOI, 10.5281/zenodo.22309110, if you need to pin an exact release.
 
 `CITATION.cff` in the repo root also gives GitHub's "Cite this repository" button.
 

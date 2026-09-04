@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or data, please cite it and the paper below."
 title: "Houston COVID-19 GIS analysis (NSF EAGER #2028612)"
 version: 1.0.0
+doi: 10.5281/zenodo.22309109
 date-released: "2026-09-03"
 license: MIT
 type: software
