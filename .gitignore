@@ -1,0 +1,16 @@
+results/*
+!results/.gitkeep
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# NEVER. Individual-level case records, 154,767 rows geocoded to X/Y with race,
+# gender and age band. Governed by the project IRB and the HHD data-use
+# agreement. Listed here as a second line of defence - it is not in this repo
+# and must never be added.
+*Every Case by Demographic*
+*Health Data*

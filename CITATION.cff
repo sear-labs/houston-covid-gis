@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it and the paper below."
+title: "Houston COVID-19 GIS analysis (NSF EAGER #2028612)"
+version: 1.0.0
+date-released: "2026-09-03"
+license: MIT
+type: software
+authors:
+  - family-names: "Jones"
+    given-names: "Erick C."
+    name-suffix: "Jr."
+    orcid: "https://orcid.org/0000-0003-0559-4699"
+    affiliation: "University of Texas at Arlington"
+preferred-citation:
+  type: article
+  title: "Understanding the Last Mile Transportation Concept Impacting Underserved Global Communities to Save Lives During COVID-19 Pandemic"
+  journal: "Frontiers in Future Transportation"
+  year: 2021
+  doi: "10.3389/ffutr.2021.732331"
+  authors:
+    - family-names: "Jones"
+      given-names: "Erick C."
+    - family-names: "Azeem"
+      given-names: "Gohar"
+    - family-names: "Jones"
+      given-names: "Erick C."
+      name-suffix: "Jr."
+      orcid: "https://orcid.org/0000-0003-0559-4699"
+    - family-names: "Jefferson"
+      given-names: "Felicia"
+    - family-names: "Henry"
+      given-names: "Marcia"
+    - family-names: "Abolmaali"
+      given-names: "Shannon"
+    - family-names: "Sparks"
+      given-names: "Janice"

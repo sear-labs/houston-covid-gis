@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "houston-covid-gis"
+version = "1.0.0"
+description = "Houston COVID-19 GIS analysis rebuilt in Python, NSF EAGER #2028612"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = { text = "MIT" }
+authors = [{ name = "Erick C. Jones Jr.", email = "erick.jones@uta.edu" }]
+
+# The core - tables and connectivity - needs no geospatial stack at all.
+dependencies = ["pandas>=2.0,<3", "networkx>=3.0,<4"]
+
+[project.optional-dependencies]
+# Only needed to read the geodatabases or draw maps. Kept optional so the
+# analysis runs anywhere pandas does.
+geo = ["geopandas>=1.0,<2", "pyogrio>=0.8", "mapclassify>=2.5", "contextily>=1.4"]
+dev = ["pytest>=8.0,<9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

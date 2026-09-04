@@ -1,0 +1,19 @@
+# conda env export --from-history equivalent: what was asked for, not the
+# transitive pin set, so it stays portable.
+#
+#   conda env create -f environment.yml
+#   conda activate houston-gis
+#
+# On Windows, GDAL_DATA and PROJ_LIB may need setting to
+# <env>/Library/share/gdal and <env>/Library/share/proj respectively.
+name: houston-gis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - geopandas
+  - pyogrio
+  - mapclassify
+  - networkx
+  - pandas
+  - pytest
