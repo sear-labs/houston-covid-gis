@@ -142,6 +142,30 @@ that **cannot be redistributed**.
 - `Harris_Vulnerability_Census_Tracts` was never recovered. CDC SVI 2018 is the input it derived
   from, not the layer itself.
 
+## How to cite
+
+Cite **the paper** for the work and **this repository** for the code.
+
+```bibtex
+@article{jones2021lastmile,
+  author  = {Jones, Erick C. and Azeem, Gohar and Jones, Jr., Erick C. and
+             Jefferson, Felicia and Henry, Marcia and Abolmaali, Shannon and
+             Sparks, Janice},
+  title   = {Understanding the Last Mile Transportation Concept Impacting
+             Underserved Global Communities to Save Lives During COVID-19 Pandemic},
+  journal = {Frontiers in Future Transportation},
+  year    = {2021},
+  doi     = {10.3389/ffutr.2021.732331}
+}
+```
+
+**Code DOI:** not yet minted. Once this repository is connected to Zenodo and a release is tagged,
+Zenodo issues two DOIs — a *version* DOI per release, and a **concept DOI that always resolves to
+the latest version and never changes**. The concept DOI goes here and in `CITATION.cff`; it stays
+correct for the life of the repository, so it is one edit rather than a per-release chore.
+
+`CITATION.cff` in the repo root also gives GitHub's "Cite this repository" button.
+
 ## Related
 
 This is **not** the project behind *"Analyzing the Connectivity of Combined Statistical Areas in
