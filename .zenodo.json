@@ -1,0 +1,36 @@
+{
+  "upload_type": "software",
+  "license": "mit-license",
+  "creators": [
+    {
+      "name": "Jones, Erick C., Jr.",
+      "affiliation": "University of Texas at Arlington",
+      "orcid": "0000-0003-0559-4699"
+    }
+  ],
+  "access_right": "open",
+  "title": "Houston COVID-19 GIS analysis, rebuilt in Python (NSF EAGER #2028612)",
+  "description": "<p>Spatial analysis of COVID-19 across 147 Houston ZIP codes in eight regions (49,365 confirmed cases, 487 deaths), with social vulnerability, hospital access and neighbourhood connectivity.</p><p>The original was an ArcGIS Pro project carrying no local data: all 25 layers were remote services, and the one holding every COVID count has since been withdrawn, so the map could no longer be opened and replayed. This is a Python rebuild from the surviving file geodatabase, requiring no Esri licence. It is more reproducible than the original, because the eight regional definitions - previously base64-encoded lists of object IDs pointing into the dead service - are now an ordinary column.</p><p>Individual-level case records governed by the project's IRB and the Houston Health Department data-use agreement are excluded, and a test fails if any file acquires individual-level columns.</p><p>Funded by the National Science Foundation under EAGER award <strong>#2028612</strong>.</p>",
+  "related_identifiers": [
+    {
+      "identifier": "10.3389/ffutr.2021.732331",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    }
+  ],
+  "grants": [
+    {
+      "id": "10.13039/100000001::2028612"
+    }
+  ],
+  "keywords": [
+    "GIS",
+    "COVID-19",
+    "social vulnerability",
+    "Houston",
+    "geopandas",
+    "health equity",
+    "NSF EAGER"
+  ]
+}
