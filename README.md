@@ -1,5 +1,6 @@
 # Houston COVID-19 GIS — NSF EAGER #2028612
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sear-labs/houston-covid-gis/blob/main/notebooks/00_walkthrough.ipynb)
 [![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22309109.svg)](https://doi.org/10.5281/zenodo.22309109)
 
 The Houston COVID-19 mapping and spatial analysis from **NSF EAGER award #2028612**, *"AI-Enabled

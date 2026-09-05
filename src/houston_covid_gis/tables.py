@@ -9,7 +9,15 @@ from __future__ import annotations
 
 import pandas as pd
 
-from .paths import DERIVED
+from .paths import DERIVED, check_data_dir
+
+
+def _csv(name: str) -> pd.DataFrame:
+    """One door to the derived tier, so a missing data directory is
+    reported once and accurately rather than seven times as a bare
+    "no such file"."""
+    check_data_dir(DERIVED)
+    return pd.read_csv(DERIVED / name)
 
 
 def covid_by_region_zip() -> pd.DataFrame:
@@ -28,7 +36,7 @@ def covid_by_region_zip() -> pd.DataFrame:
 
     See legacy_region_exports() for the earlier snapshot and why it disagrees.
     """
-    return pd.read_csv(DERIVED / "covid_by_region_zip.csv")
+    return _csv("covid_by_region_zip.csv")
 
 
 def legacy_region_exports() -> pd.DataFrame:
@@ -49,7 +57,7 @@ def legacy_region_exports() -> pd.DataFrame:
     anyone comparing this repo against the original spreadsheets deserves to
     find the discrepancy documented rather than discover it themselves.
     """
-    return pd.read_csv(DERIVED / "legacy_2020_region_exports.csv")
+    return _csv("legacy_2020_region_exports.csv")
 
 
 def svi_by_zip() -> pd.DataFrame:
@@ -60,7 +68,7 @@ def svi_by_zip() -> pd.DataFrame:
     upstream CDC tract file is referenced in sources.DOWNLOADS rather than
     vendored here.
     """
-    return pd.read_csv(DERIVED / "svi_by_zip.csv")
+    return _csv("svi_by_zip.csv")
 
 
 def super_neighborhood_distances() -> pd.DataFrame:
@@ -70,7 +78,7 @@ def super_neighborhood_distances() -> pd.DataFrame:
     routed. That matters: it means scipy.spatial.cKDTree reproduces it exactly,
     with no ArcGIS and no routing engine. See connectivity.py.
     """
-    return pd.read_csv(DERIVED / "super_neighborhood_distances.csv")
+    return _csv("super_neighborhood_distances.csv")
 
 
 def nearest_hospital() -> pd.DataFrame:
@@ -82,7 +90,7 @@ def nearest_hospital() -> pd.DataFrame:
     decimal - different network, different speed model. Treat as recorded
     output, not as something to regenerate and diff.
     """
-    return pd.read_csv(DERIVED / "nearest_hospital.csv")
+    return _csv("nearest_hospital.csv")
 
 
 def zip_to_hospital_distances() -> pd.DataFrame:
@@ -92,12 +100,12 @@ def zip_to_hospital_distances() -> pd.DataFrame:
     the origin ZIP, which is legitimate, but the value is not a measured
     distance. Filter before using this for anything quantitative.
     """
-    return pd.read_csv(DERIVED / "zip_to_hospital_distances.csv")
+    return _csv("zip_to_hospital_distances.csv")
 
 
 def zip_populations() -> pd.DataFrame:
     """ZIP populations 2018/2019. Six empty insurance-carrier columns removed."""
-    return pd.read_csv(DERIVED / "zip_populations.csv")
+    return _csv("zip_populations.csv")
 
 
 def regional_summary() -> pd.DataFrame:
